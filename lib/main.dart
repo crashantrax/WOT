@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                      children: <Widget>[
                        new Padding(
                          child: new Text(
-                           "LATEST UPLOAD",
+                           "LATEST UPLOADS",
                            style: new TextStyle(
                                fontSize: 12.0,
                                color: Colors.red,
