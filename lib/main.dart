@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
+          backgroundColor: Colors.black,
           title: new Text('Web Online Tutorials'),
         ),
         body: new Container(
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           "LATEST UPLOADS",
                           style: new TextStyle(
                               fontSize: 12.0,
-                              color: Colors.red,
+                              color: Colors.black,
                               fontWeight: FontWeight.w700,
                               fontFamily: "Roboto"),
                         ),
@@ -66,8 +67,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
                       ),
                       new IconButton(
-                          icon: new Icon(Icons.navigate_next),
-                          onPressed: () {}),
+                        color: Colors.red,
+                        icon: new Icon(Icons.navigate_next),
+                        onPressed: () {}),
                     ]),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
