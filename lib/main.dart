@@ -34,16 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
           title: new Text('Web Online Tutorials'),
         ),
         body: new Container(
-          height: 520.0,
-          width: 520.0,
-          decoration: new BoxDecoration(
-            image: DecorationImage(
-              image: new AssetImage('assets/images/WOT2.png'),
-              fit: BoxFit.fill,
-            ),
-            shape: BoxShape.circle,
-          ),
-//          child: null,
           child: new Column(
               mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
