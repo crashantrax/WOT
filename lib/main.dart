@@ -29,6 +29,37 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Text('Drawer Header'),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+              ),
+              ListTile(
+                title: Text('Item 1'),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text('Item 2'),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
+        ),
         appBar: new AppBar(
           backgroundColor: Colors.black,
           title: new Text('Web Online Tutorials'),
@@ -57,9 +88,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
                       ),
                       new IconButton(
-                        color: Colors.red,
-                        icon: new Icon(Icons.navigate_next),
-                        onPressed: () {}),
+                          color: Colors.red,
+                          icon: new Icon(Icons.navigate_next),
+                          onPressed: () {}),
                     ]),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
