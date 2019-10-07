@@ -1,4 +1,4 @@
-# wot
+# WOT
 
 A Web Online Tutorial Application
 
