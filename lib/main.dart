@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: EdgeInsets.symmetric(horizontal: 5.0),
                       child: Image.asset(
                         'assets/images/WOT2.png',
                         width: 100.0,
@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: EdgeInsets.symmetric(horizontal: 5.0),
                       child: Image.asset(
                         'assets/images/WOT2.png',
                         width: 100.0,
@@ -183,9 +183,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 new Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       new Padding(
                         child: new Text(
@@ -218,9 +215,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           )),
                     ]),
                 new Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -229,7 +223,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
-                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -241,13 +234,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 0.0),
                         child: FlatButton(
-                          color: Colors.blue,
+                          color: Colors.cyanAccent,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
-                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -260,18 +252,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ]),
                 new Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: FlatButton(
-                          color: Colors.blue,
+                          color: Colors.orangeAccent,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
-                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -283,13 +271,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 0.0),
                         child: FlatButton(
-                          color: Colors.blue,
+                          color: Colors.teal,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
-                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
