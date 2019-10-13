@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 5.0),
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Image.asset(
                         'assets/images/WOT2.png',
                         width: 100.0,
@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 5.0),
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Image.asset(
                         'assets/images/WOT2.png',
                         width: 100.0,
@@ -183,6 +183,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 new Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       new Padding(
                         child: new Text(
@@ -215,6 +218,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           )),
                     ]),
                 new Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -223,6 +229,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -234,12 +241,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 0.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
                         child: FlatButton(
-                          color: Colors.cyanAccent,
+                          color: Colors.orange,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -252,14 +260,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ]),
                 new Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: FlatButton(
-                          color: Colors.orangeAccent,
+                          color: Colors.lightGreenAccent,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -271,12 +283,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 0.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
                         child: FlatButton(
-                          color: Colors.teal,
+                          color: Colors.pink,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
                           splashColor: Colors.blueAccent,
                           onPressed: () {
                             /*...*/
@@ -288,7 +301,50 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ]),
+                new Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      new Padding(
+                        child: new Text(
+                          "MOST POPULAR",
+                          style: new TextStyle(
+                              fontSize: 12.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "Roboto"),
+                        ),
+                        padding:
+                            const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
+                      ),
               ]),
-        ));
+                new Row(
+                  children: <Widget>[
+                    Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ])));
   }
 }
