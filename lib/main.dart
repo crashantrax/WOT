@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:html2md/html2md.dart' as html2md;
+// import 'package:flutter_markdown/flutter_markdown.dart';
 
 void main() {
   runApp(new MyApp());
@@ -114,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 65.0),
                           child: new FlatButton(
-                            color: Colors.black,
+                            color: Colors.redAccent,
                             textColor: Colors.white,
                             disabledColor: Colors.grey,
                             disabledTextColor: Colors.black,
@@ -124,7 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             },
                             child: Text(
                               "VIEW ALL",
-                              style: TextStyle(fontSize: 10.0),
+                              style: TextStyle(
+                                  fontSize: 8.0, fontWeight: FontWeight.w600),
                             ),
                           )),
                     ]),
@@ -132,37 +135,50 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: 
-                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: 
-                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: 
-                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
                     ),
                   ],
                 ),
                 new Row(
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-                      child: 
-                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: 
-                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: 
-                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                      child: Image.asset(
+                        'assets/images/WOT2.png',
+                        width: 100.0,
+                      ),
                     ),
                   ],
                 ),
@@ -184,9 +200,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
                       ),
                       Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 60.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 55.0),
                           child: new FlatButton(
-                            color: Colors.black,
+                            color: Colors.redAccent,
                             textColor: Colors.white,
                             disabledColor: Colors.grey,
                             disabledTextColor: Colors.black,
@@ -196,12 +212,96 @@ class _MyHomePageState extends State<MyHomePage> {
                             },
                             child: Text(
                               "VIEW ALL",
-                              style: TextStyle(fontSize: 10.0),
+                              style: TextStyle(
+                                  fontSize: 8.0, fontWeight: FontWeight.w600),
                             ),
                           )),
+                    ]),
+                new Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: FlatButton(
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          disabledColor: Colors.grey,
+                          disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
+                          splashColor: Colors.blueAccent,
+                          onPressed: () {
+                            /*...*/
+                          },
+                          child: Text(
+                            "CATEGORY 1",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                        child: FlatButton(
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          disabledColor: Colors.grey,
+                          disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
+                          splashColor: Colors.blueAccent,
+                          onPressed: () {
+                            /*...*/
+                          },
+                          child: Text(
+                            "CATEGORY 2",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ),
+                      ),
+                    ]),
+                new Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: FlatButton(
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          disabledColor: Colors.grey,
+                          disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
+                          splashColor: Colors.blueAccent,
+                          onPressed: () {
+                            /*...*/
+                          },
+                          child: Text(
+                            "CATEGORY 3",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                        child: FlatButton(
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          disabledColor: Colors.grey,
+                          disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
+                          splashColor: Colors.blueAccent,
+                          onPressed: () {
+                            /*...*/
+                          },
+                          child: Text(
+                            "CATEGORY 4",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ),
+                      ),
                     ]),
               ]),
         ));
   }
-
 }
