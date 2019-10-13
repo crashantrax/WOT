@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
       title: 'WOT',
       // THEME
       theme: new ThemeData(
-        // brightness: Brightness.dark,
-        primaryColor: const Color(0xFF263238),
+        brightness: Brightness.light,
+        // primaryColor: Colors.blueGrey,
       ),
       home: new MyHomePage(),
     );
@@ -31,19 +31,14 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
         drawer: Drawer(
           child: ListView(
-            padding: EdgeInsets.zero,
+            padding: EdgeInsets.symmetric(vertical: 30.0),
             children: <Widget>[
-              DrawerHeader(
-                child: Text(
-                  'Drawer Header',
-                  style: TextStyle(color: Colors.white),
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                ),
-              ),
               ListTile(
-                title: Text('Item 1'),
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(
+                      "assets/images/youtube.png"),
+                ),
+                title: Text('Main Channel'),
                 onTap: () {
                   // Update the state of the app
                   // ...
@@ -52,7 +47,37 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
-                title: Text('Item 2'),
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(
+                      "assets/images/youtube.png"),
+                ),
+                title: Text('Other Channel'),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(
+                      "assets/images/fb.png"),
+                ),
+                title: Text('Facebook'),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(
+                      "..."),
+                ),
+                title: Text('Website'),
                 onTap: () {
                   // Update the state of the app
                   // ...
