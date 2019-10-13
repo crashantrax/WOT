@@ -31,12 +31,11 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
         drawer: Drawer(
           child: ListView(
-            padding: EdgeInsets.symmetric(vertical: 30.0),
+            padding: EdgeInsets.symmetric(vertical: 50.0),
             children: <Widget>[
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage(
-                      "assets/images/youtube.png"),
+                  backgroundImage: AssetImage("assets/images/youtube.png"),
                 ),
                 title: Text('Main Channel'),
                 onTap: () {
@@ -48,8 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage(
-                      "assets/images/youtube.png"),
+                  backgroundImage: AssetImage("assets/images/youtube.png"),
                 ),
                 title: Text('Other Channel'),
                 onTap: () {
@@ -61,8 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage(
-                      "assets/images/fb.png"),
+                  backgroundImage: AssetImage("assets/images/fb.png"),
                 ),
                 title: Text('Facebook'),
                 onTap: () {
@@ -74,8 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage(
-                      "..."),
+                  backgroundImage: AssetImage("..."),
                 ),
                 title: Text('Website'),
                 onTap: () {
@@ -127,51 +123,85 @@ class _MyHomePageState extends State<MyHomePage> {
                               /*...*/
                             },
                             child: Text(
-                              "More",
+                              "VIEW ALL",
                               style: TextStyle(fontSize: 10.0),
                             ),
                           )),
                     ]),
                 new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    new Padding(
-                      child: null,
-                      padding:
-                          const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: 
+                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: 
+                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: 
+                    Image.asset('assets/images/WOT2.png',width: 100.0,),
                     ),
                   ],
                 ),
                 new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+                      child: 
+                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: 
+                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: 
+                    Image.asset('assets/images/WOT2.png',width: 100.0,),
+                    ),
+                  ],
                 ),
                 new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                )
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      new Padding(
+                        child: new Text(
+                          "VIEW BY CATEGORY",
+                          style: new TextStyle(
+                              fontSize: 12.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "Roboto"),
+                        ),
+                        padding:
+                            const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 60.0),
+                          child: new FlatButton(
+                            color: Colors.black,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              /*...*/
+                            },
+                            child: Text(
+                              "VIEW ALL",
+                              style: TextStyle(fontSize: 10.0),
+                            ),
+                          )),
+                    ]),
               ]),
         ));
   }
 
-  void buttonPressed() {}
 }
