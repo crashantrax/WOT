@@ -34,9 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                child: Text('Drawer Header'),
+                child: Text(
+                  'Drawer Header',
+                  style: TextStyle(color: Colors.white),
+                ),
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Colors.black,
                 ),
               ),
               ListTile(
@@ -87,10 +90,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding:
                             const EdgeInsets.fromLTRB(30.0, 12.0, 10.0, 12.0),
                       ),
-                      new IconButton(
-                          color: Colors.red,
-                          icon: new Icon(Icons.navigate_next),
-                          onPressed: () {}),
+                      Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 65.0),
+                          child: new FlatButton(
+                            color: Colors.black,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              /*...*/
+                            },
+                            child: Text(
+                              "More",
+                              style: TextStyle(fontSize: 10.0),
+                            ),
+                          )),
                     ]),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
